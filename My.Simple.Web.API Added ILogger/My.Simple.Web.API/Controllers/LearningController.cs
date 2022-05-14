@@ -32,6 +32,7 @@ namespace My.Simple.Web.API.Controllers
         [HttpGet("send-mail")]
         public IActionResult SendMail()
         {
+
             _logger.LogInformation("Send Mail Service Started");
             try
             {

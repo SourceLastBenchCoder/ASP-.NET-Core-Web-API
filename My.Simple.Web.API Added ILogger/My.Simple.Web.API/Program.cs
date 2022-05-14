@@ -12,7 +12,12 @@ ConfigurationManager Configuration = builder.Configuration;
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
 builder.Services.Configure<MailInfo>(Configuration.GetSection("MailInfo"));
+var logger = new LoggerConfiguration()
+    .WriteTo.File(Path.Combine("C:\\Logs\\", "Test-Log-{Date}.txt"),
+    rollingInterval: RollingInterval.Day, fileSizeLimitBytes: 100000)
+    .CreateLogger();
 
+builder.Host.UseSerilog(logger);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -51,7 +56,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseCors("SampleCORS");
 app.UseAuthorization();
-
+app.UseSerilogRequestLogging();
 app.MapControllers();
 
 app.Run();
