@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWithChakri.API.Testing", "CodeWithChakri.API.Testing\CodeWithChakri.API.Testing.csproj", "{5080B427-4CF9-4314-9CF5-3F646D741A22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWithChakri.API.Testing.UnitTest", "CodeWithChakri.API.Testing.UnitTest\CodeWithChakri.API.Testing.UnitTest.csproj", "{32A00767-D95B-42A7-B46D-3DC78F832E92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5080B427-4CF9-4314-9CF5-3F646D741A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5080B427-4CF9-4314-9CF5-3F646D741A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5080B427-4CF9-4314-9CF5-3F646D741A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5080B427-4CF9-4314-9CF5-3F646D741A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A00767-D95B-42A7-B46D-3DC78F832E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A00767-D95B-42A7-B46D-3DC78F832E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A00767-D95B-42A7-B46D-3DC78F832E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A00767-D95B-42A7-B46D-3DC78F832E92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D387F35C-E4A5-4535-96EC-BF8680DF135D}
+	EndGlobalSection
+EndGlobal
